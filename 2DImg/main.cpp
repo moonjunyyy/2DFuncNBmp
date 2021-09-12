@@ -2,6 +2,9 @@
 #include <fstream>
 using namespace std;
 
+//Sprint 2
+#include "bmpNew.h"
+
 int main(int argc, char* argv[])
 {
 	//Sprint 1
@@ -19,6 +22,10 @@ int main(int argc, char* argv[])
 			mybmp[3 * (i * 200 + j) + 2] = i > 255 ? 255 : i;
 		}
 	}
+
+	//Sprint 3
+	char NameofFile[] = "mybmp.bmp";
+	WriteBmp(NameofFile, mybmp, 200, 300);
 
 	delete[] mybmp;
 }
