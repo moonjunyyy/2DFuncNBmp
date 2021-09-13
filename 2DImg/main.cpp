@@ -79,4 +79,6 @@ int main(int argc, char* argv[])
 
 	delete[] bmpB;
 	delete[] bmpRed, bmpGreen, bmpBlue, bmpMono;
+
+	return 0;
 }
